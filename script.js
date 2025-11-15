@@ -1,4 +1,3 @@
-// PRODUCT DATA
 const products = [
     { name: "iPhone 14 Pro Max", cat: "mobiles", price: 1200 },
     { name: "iPhone 13", cat: "mobiles", price: 800 },
@@ -10,7 +9,6 @@ const products = [
     { name: "Camera Lens iPhone 12", cat: "others", price: 15 },
 ];
 
-// DISPLAY PRODUCTS
 function displayProducts(list) {
     const container = document.getElementById("products");
     container.innerHTML = "";
@@ -24,19 +22,16 @@ function displayProducts(list) {
     });
 }
 
-// FILTER FUNCTION
 function filterProducts(cat) {
     if (cat === "all") displayProducts(products);
     else displayProducts(products.filter(p => p.cat === cat));
 }
 
-// SEARCH FUNCTION
 function searchProducts() {
     const q = document.getElementById("search").value.toLowerCase();
     displayProducts(products.filter(p => p.name.toLowerCase().includes(q)));
 }
 
-// ENABLE BUTTON CLICKS (IMPORTANT)
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".chip").forEach(chip => {
         chip.addEventListener("click", () => {
@@ -48,6 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
             else filterProducts("others");
         });
     });
-
     displayProducts(products);
 });
