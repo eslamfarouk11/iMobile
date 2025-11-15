@@ -1,0 +1,42 @@
+# iMobile Store
+A simple, modern website for showcasing and selling iPhones and iPhone spare parts. Built using **HTML**, **CSS**, and **JavaScript**.
+
+## 📁 Project Structure
+```
+imobile/
+│── index.html
+│── style.css
+│── script.js
+│── README.md
+```
+
+## 🚀 Features
+- Product listing (mobiles, screens, batteries, spare parts)
+- Category filtering
+- Live search functionality
+- Modern UI with hover effects
+- Fully responsive grid layout
+
+## 💻 Technologies Used
+- **HTML5**
+- **CSS3** (with glassmorphism & gradient design)
+- **Vanilla JavaScript**
+
+## 🔧 How to Run
+1. Download the project folder
+2. Make sure all files are in the same directory
+3. Open `index.html` in any browser
+
+## 🌐 Deploying to GitHub Pages
+1. Upload all files to a GitHub repository
+2. Go to **Settings > Pages**
+3. Select the `main` branch and `/root` folder
+4. Your site will be live within seconds 🔥
+
+## 📌 Notes
+- You can customize the product list inside `script.js`
+- Styling can be modified through `style.css`
+- The site does not require any backend — fully static
+
+---
+Made with ❤️ for your project presentation

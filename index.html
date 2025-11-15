@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iMobile - Mobile & iPhone Spare Parts Store</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>iMobile Store</h1>
+    <p>Your trusted place for iPhone mobiles & spare parts</p>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search for products..." onkeyup="searchProducts()" />
+    </div>
+
+    <div class="chips">
+        <div class="chip" onclick="filterProducts('all')">All</div>
+        <div class="chip" onclick="filterProducts('mobiles')">Mobiles</div>
+        <div class="chip" onclick="filterProducts('screens')">Screens</div>
+        <div class="chip" onclick="filterProducts('batteries')">Batteries</div>
+        <div class="chip" onclick="filterProducts('others')">Other Parts</div>
+    </div>
+</header>
+
+<div class="products" id="products"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
